@@ -12,6 +12,13 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   tx:
+    permissions:
+      contents: read
+      issues: read
+      checks: write
+      pull-requests: write
+      pages: write
+      id-token: write
     uses: ./.github/workflows/regression_template.yml
     with:
       build_script: ./scripts/build_tx.sh
@@ -20,6 +27,13 @@ jobs:
       result_affix: ThreadX
       skip_deploy: true
   smp:
+    permissions:
+      contents: read
+      issues: read
+      checks: write
+      pull-requests: write
+      pages: write
+      id-token: write
     uses: ./.github/workflows/regression_template.yml
     with:
       build_script: ./scripts/build_smp.sh
@@ -28,6 +42,13 @@ jobs:
       result_affix: SMP
       skip_deploy: true
   deploy:
+    permissions:
+      contents: read
+      issues: read
+      checks: write
+      pull-requests: write
+      pages: write
+      id-token: write
     needs: [tx, smp]
     uses: ./.github/workflows/regression_template.yml
     with:
