@@ -63,7 +63,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: Check out the repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v4.2.2
       with:
         submodules: true
     
@@ -86,7 +86,7 @@ jobs:
           
     - name: Upload Test Results
       if: success() || failure()
-      uses: actions/upload-artifact@v4.6.0
+      uses: actions/upload-artifact@v4.6.2
       with:
         name: test_reports ${{ inputs.result_affix }}
         path: |
@@ -95,7 +95,7 @@ jobs:
           ${{ inputs.cmake_path }}/build/**/regression/output_files/*.bin
     
     - name: Configure GitHub Pages
-      uses: actions/configure-pages@v3.0.6
+      uses: actions/configure-pages@v5.0.0
 
     - name: Generate Code Coverage Results Summary
       if: (!inputs.skip_coverage)
@@ -115,7 +115,7 @@ jobs:
 
     - name: Create CheckRun for Code Coverage
       if: ((github.event_name == 'push') || (github.event_name == 'workflow_dispatch') || (github.event.pull_request.head.repo.full_name == github.repository)) && (!inputs.skip_coverage)
-      uses: LouisBrunner/checks-action@v1.6.2
+      uses: LouisBrunner/checks-action@v2.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         name: Code Coverage ${{ inputs.result_affix }}
@@ -126,7 +126,7 @@ jobs:
 
     - name: Add Code Coverage PR Comment
       if: ((github.event_name == 'push') || (github.event.pull_request.head.repo.full_name == github.repository)) && (!inputs.skip_coverage)
-      uses: marocchino/sticky-pull-request-comment@v2
+      uses: marocchino/sticky-pull-request-comment@v2.9.4
       with:
         header: Code Coverage ${{ inputs.result_affix }}
         path: code-coverage-results.md
@@ -141,7 +141,7 @@ jobs:
         fi
           
     - name: Upload Code Coverage Artifacts
-      uses: actions/upload-artifact@v4.6.0
+      uses: actions/upload-artifact@v4.6.2
       if: (inputs.skip_deploy && !inputs.skip_coverage)
       with:
         name: coverage_report
@@ -149,7 +149,7 @@ jobs:
         retention-days: 1
           
     - name: Upload Code Coverage Pages
-      uses: actions/upload-pages-artifact@v2.0.0
+      uses: actions/upload-pages-artifact@v3.0.1
       if: (!inputs.skip_deploy && !inputs.skip_coverage)
       with:
         path: ${{ inputs.cmake_path }}/coverage_report/${{ inputs.coverage_name }}
@@ -166,25 +166,25 @@ jobs:
       id-token: write
 
     steps:
-    - uses: actions/download-artifact@v4.1.7
+    - uses: actions/download-artifact@v4.3.0
       if: ${{ inputs.skip_test }}
       with:
         name: coverage_report
 
     - name: Upload Code Coverage Pages
-      uses: actions/upload-pages-artifact@v2.0.0
+      uses: actions/upload-pages-artifact@v3.0.1
       if: ${{ inputs.skip_test }}
       with:
         path: .
 
     - name: Delete Duplicate Code Coverage Artifact 
-      uses: geekyeggo/delete-artifact@v2
+      uses: geekyeggo/delete-artifact@v5.1.0
       with:
           name: coverage_report
 
     - name: Deploy GitHub Pages site
       id: deployment
-      uses: actions/deploy-pages@v1.2.9
+      uses: actions/deploy-pages@v4.0.5
 
     - name: Write Code Coverage Report URL
       run: >-
