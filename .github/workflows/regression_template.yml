@@ -174,7 +174,8 @@ jobs:
     - uses: actions/download-artifact@v4.3.0
       if: ${{ inputs.skip_test }}
       with:
-        name: coverage_report
+        name: ${{ steps.artifact.outputs.coverage_report }}
+        path: ${{ inputs.cmake_path }}/coverage_report
 
     - name: Upload Code Coverage Pages
       uses: actions/upload-pages-artifact@v3.0.1
