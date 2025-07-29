@@ -139,15 +139,19 @@ jobs:
           sudo mv ${{ inputs.cmake_path }}/coverage_report/${{ inputs.coverage_name }} \
             ${{ inputs.cmake_path }}/coverage_report/${{ inputs.result_affix }}
         fi
-          
+
+    - name: Coverage Report name
+        id: artifact
+        run: echo "coverage_report=coverage_report-$(date +%s)" >> $GITHUB_OUTPUT
+
     - name: Upload Code Coverage Artifacts
-      uses: actions/upload-artifact@v4.6.2
-      if: (inputs.skip_deploy && !inputs.skip_coverage)
-      with:
-        name: coverage_report
-        path: ${{ inputs.cmake_path }}/coverage_report
-        retention-days: 1
-          
+        uses: actions/upload-artifact@v4.6.2
+        if: (inputs.skip_deploy && !inputs.skip_coverage)
+        with:
+          name: ${{ steps.artifact.outputs.coverage_report }}
+          path: ${{ inputs.cmake_path }}/coverage_report
+          retention-days: 1
+
     - name: Upload Code Coverage Pages
       uses: actions/upload-pages-artifact@v3.0.1
       if: (!inputs.skip_deploy && !inputs.skip_coverage)
