@@ -141,13 +141,14 @@ jobs:
         fi
 
     - name: Coverage Report name
-        id: artifact
-        run: echo "coverage_report=coverage_report-$(date +%s)" >> $GITHUB_OUTPUT
+      id: artifact
+      if: (!inputs.skip_coverage)
+      run: echo "coverage_report=coverage_report-$(date +%s)" >> $GITHUB_OUTPUT
 
     - name: Upload Code Coverage Artifacts
-        uses: actions/upload-artifact@v4.6.2
-        if: (inputs.skip_deploy && !inputs.skip_coverage)
-        with:
+      uses: actions/upload-artifact@v4.6.2
+      if: (inputs.skip_deploy && !inputs.skip_coverage)
+      with:
           name: ${{ steps.artifact.outputs.coverage_report }}
           path: ${{ inputs.cmake_path }}/coverage_report
           retention-days: 1
