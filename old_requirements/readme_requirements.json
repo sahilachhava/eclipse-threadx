@@ -5,14 +5,14 @@
   "total": 40,
   "issues": [
     {
-      "id": "20041",
-      "key": "CODE-001",
+      "id": "20001",
+      "key": "REQ-001",
       "fields": {
-        "summary": "Picokernel initialization sequence",
+        "summary": "Advanced real-time scheduling",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -26,19 +26,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Kernel must follow strict initialization order: low-level setup, high-level initialization, application define, then scheduler entry.",
+        "description": "System must provide deterministic, priority-based thread scheduling with configurable preemption policies.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20042",
-      "key": "CODE-002",
+      "id": "20002",
+      "key": "REQ-002",
       "fields": {
-        "summary": "Never-returning kernel entry",
+        "summary": "Preemption threshold scheduling",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -52,19 +52,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "The _tx_initialize_kernel_enter function must never return and directly transition to scheduler loop.",
+        "description": "RTOS must support preemption threshold mechanism to prevent lower-priority threads from preempting current thread.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20043",
-      "key": "CODE-003",
+      "id": "20003",
+      "key": "REQ-003",
       "fields": {
-        "summary": "Priority-based thread scheduling",
+        "summary": "Event chaining capability",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -78,19 +78,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must support configurable priority levels with TX_MAX_PRIORITIES as multiple of 32.",
+        "description": "System shall support chaining of events for efficient multi-event processing and synchronization.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20044",
-      "key": "CODE-004",
+      "id": "20004",
+      "key": "REQ-004",
       "fields": {
-        "summary": "Thread state management",
+        "summary": "Picokernel architecture",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -104,19 +104,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Threads must support READY (0), COMPLETED (1), TERMINATED (2), and additional suspension states.",
+        "description": "Core kernel must maintain minimal memory footprint while providing full RTOS functionality.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20045",
-      "key": "CODE-005",
+      "id": "20005",
+      "key": "REQ-005",
       "fields": {
-        "summary": "Preemption threshold support",
+        "summary": "Interrupt management system",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -130,19 +130,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Each thread must have configurable preemption threshold separate from priority level.",
+        "description": "RTOS shall provide comprehensive interrupt handling and nested interrupt support.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20046",
-      "key": "CODE-006",
+      "id": "20006",
+      "key": "REQ-006",
       "fields": {
-        "summary": "Time-slice scheduling",
+        "summary": "Inter-thread message passing",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -156,19 +156,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Threads must support configurable time-slice values for round-robin scheduling within same priority.",
+        "description": "System must support multiple IPC mechanisms including queues, semaphores, and mutexes.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20047",
-      "key": "CODE-007",
+      "id": "20007",
+      "key": "REQ-007",
       "fields": {
-        "summary": "Automatic thread startup",
+        "summary": "Rich system services",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -182,19 +182,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Thread creation must support AUTO_START and DONT_START options for immediate execution control.",
+        "description": "RTOS shall provide comprehensive set of kernel services for thread, memory, and timer management.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20048",
-      "key": "CODE-008",
+      "id": "20008",
+      "key": "REQ-008",
       "fields": {
-        "summary": "Byte pool allocation",
+        "summary": "ThreadX SMP support",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -208,19 +208,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must provide dynamic memory allocation through byte pools with variable-size block allocation.",
+        "description": "System must support symmetric multi-processing for multi-core embedded applications.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20049",
-      "key": "CODE-009",
+      "id": "20009",
+      "key": "REQ-009",
       "fields": {
-        "summary": "Block pool allocation",
+        "summary": "High-performance SMP kernel",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -234,19 +234,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must support fixed-size block pools for fast, deterministic memory allocation.",
+        "description": "SMP implementation shall maintain real-time determinism across multiple processor cores.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20050",
-      "key": "CODE-010",
+      "id": "20010",
+      "key": "REQ-010",
       "fields": {
-        "summary": "Memory alignment enforcement",
+        "summary": "Dynamic module loading",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -260,19 +260,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "All memory allocations must maintain proper alignment based on TX_ALIGN_TYPE requirements.",
+        "description": "ThreadX Modules component must support runtime loading of applications built separately from resident code.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20051",
-      "key": "CODE-011",
+      "id": "20011",
+      "key": "REQ-011",
       "fields": {
-        "summary": "Mutex priority inheritance",
+        "summary": "Module isolation infrastructure",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -286,19 +286,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Mutexes must support optional priority inheritance to prevent priority inversion.",
+        "description": "System shall provide infrastructure for secure module execution and resource management.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20052",
-      "key": "CODE-012",
+      "id": "20012",
+      "key": "REQ-012",
       "fields": {
-        "summary": "Event flags operations",
+        "summary": "RTOS adaptation layers",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -312,19 +312,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Event flags must support AND/OR operations with optional clearing (TX_AND, TX_OR, TX_AND_CLEAR, TX_OR_CLEAR).",
+        "description": "System must provide compatibility layers for FreeRTOS, POSIX, and OSEK APIs.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20053",
-      "key": "CODE-013",
+      "id": "20013",
+      "key": "REQ-013",
       "fields": {
-        "summary": "Queue message passing",
+        "summary": "Migration assistance",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -338,19 +338,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Queues must support configurable message sizes (1, 2, 4, 8, 16 ULONGs).",
+        "description": "Adaptation layers shall ease application migration from other RTOS platforms to ThreadX.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20054",
-      "key": "CODE-014",
+      "id": "20014",
+      "key": "REQ-014",
       "fields": {
-        "summary": "Semaphore counting",
+        "summary": "Maximum speed configuration",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -364,19 +364,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Semaphores must support counting with configurable initial and maximum values.",
+        "description": "System must support optimized configuration with 32 priorities, disabled preemption threshold, and inline operations.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20055",
-      "key": "CODE-015",
+      "id": "20015",
+      "key": "REQ-015",
       "fields": {
-        "summary": "Comprehensive error codes",
+        "summary": "Minimum size configuration",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -390,19 +390,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must return specific error codes (TX_POOL_ERROR, TX_PTR_ERROR, TX_SIZE_ERROR, etc.).",
+        "description": "RTOS shall provide memory-optimized build options for resource-constrained embedded systems.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20056",
-      "key": "CODE-016",
+      "id": "20016",
+      "key": "REQ-016",
       "fields": {
-        "summary": "Parameter validation",
+        "summary": "Deterministic real-time behavior",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -416,19 +416,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "All API functions must have corresponding txe_ error-checking variants.",
+        "description": "All kernel operations must have bounded execution times suitable for hard real-time applications.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20057",
-      "key": "CODE-017",
+      "id": "20017",
+      "key": "REQ-017",
       "fields": {
-        "summary": "Safety critical support",
+        "summary": "Hardware-based isolation",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -442,19 +442,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Optional TX_SAFETY_CRITICAL mode must provide exception handling for critical failures.",
+        "description": "System must utilize MCU/MPU hardware protection mechanisms for code and data isolation.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20058",
-      "key": "CODE-018",
+      "id": "20018",
+      "key": "REQ-018",
       "fields": {
-        "summary": "Stack overflow checking",
+        "summary": "Secure communication support",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -468,19 +468,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Optional TX_ENABLE_STACK_CHECKING must detect stack corruption during execution.",
+        "description": "RTOS shall provide components enabling OEMs to implement secure communication protocols.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20059",
-      "key": "CODE-019",
+      "id": "20019",
+      "key": "REQ-019",
       "fields": {
-        "summary": "Execution profiling",
+        "summary": "Vulnerability management",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -494,19 +494,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Optional TX_EXECUTION_PROFILE_ENABLE must track thread execution statistics.",
+        "description": "Security issues must be reportable through Eclipse Foundation Security Team with defined response process.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20060",
-      "key": "CODE-020",
+      "id": "20020",
+      "key": "REQ-020",
       "fields": {
-        "summary": "Random stack filling",
+        "summary": "Supported version maintenance",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -520,19 +520,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Optional TX_ENABLE_RANDOM_NUMBER_STACK_FILLING must fill stacks with random patterns for debugging.",
+        "description": "Version 6.4.x shall be actively maintained for security updates and critical bug fixes.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20061",
-      "key": "CODE-021",
+      "id": "20021",
+      "key": "REQ-021",
       "fields": {
-        "summary": "No-wait operations",
+        "summary": "ARM Cortex processor support",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -546,19 +546,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "All blocking operations must support TX_NO_WAIT (0) for immediate return.",
+        "description": "System must support ARM Cortex-M (M0-M85), Cortex-A (A5-A78), and Cortex-R (R4-R7) architectures.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20062",
-      "key": "CODE-022",
+      "id": "20022",
+      "key": "REQ-022",
       "fields": {
-        "summary": "Forever wait support",
+        "summary": "RISC-V architecture support",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -572,19 +572,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "All blocking operations must support TX_WAIT_FOREVER (0xFFFFFFFF) for indefinite blocking.",
+        "description": "RTOS shall provide native support for RISC-V 32-bit processor architecture.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20063",
-      "key": "CODE-023",
+      "id": "20023",
+      "key": "REQ-023",
       "fields": {
-        "summary": "Timeout value handling",
+        "summary": "Multi-architecture compatibility",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -598,19 +598,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "All blocking operations must support arbitrary timeout values in timer ticks.",
+        "description": "System must support ARC, RX, x86, and Xtensa processor architectures.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20064",
-      "key": "CODE-024",
+      "id": "20024",
+      "key": "REQ-024",
       "fields": {
-        "summary": "Interrupt-safe operations",
+        "summary": "Development platform support",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -624,19 +624,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "All kernel operations must be safe for execution from interrupt service routines.",
+        "description": "RTOS shall support Linux and Win32 platforms for development and testing purposes.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20065",
-      "key": "CODE-025",
+      "id": "20025",
+      "key": "REQ-025",
       "fields": {
-        "summary": "System state tracking",
+        "summary": "Semiconductor SDK integration",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -650,19 +650,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Kernel must maintain global system state to prevent invalid operations (initialization vs. running).",
+        "description": "System must integrate with major semiconductor vendor SDKs (STMicroelectronics, NXP, Renesas, Microchip).",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20066",
-      "key": "CODE-026",
+      "id": "20026",
+      "key": "REQ-026",
       "fields": {
-        "summary": "Thread context validation",
+        "summary": "CMake build system",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -676,19 +676,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must detect and prevent invalid operations from wrong execution context.",
+        "description": "RTOS shall provide composable CMake-based build system supporting multiple toolchains and targets.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20067",
-      "key": "CODE-027",
+      "id": "20027",
+      "key": "REQ-027",
       "fields": {
-        "summary": "Event tracing support",
+        "summary": "ARM GNU Toolchain compatibility",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -702,19 +702,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Optional TX_ENABLE_EVENT_TRACE must record all kernel operations for analysis.",
+        "description": "System must be fully compatible with ARM GNU Toolchain for cross-compilation.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20068",
-      "key": "CODE-028",
+      "id": "20028",
+      "key": "REQ-028",
       "fields": {
-        "summary": "User event insertion",
+        "summary": "Git submodule integration",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -728,19 +728,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must allow user-defined trace events through tx_trace_user_event_insert.",
+        "description": "RTOS shall support integration as git submodule using CMake add_subdirectory() function.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20069",
-      "key": "CODE-029",
+      "id": "20029",
+      "key": "REQ-029",
       "fields": {
-        "summary": "Performance metrics",
+        "summary": "Safety certification compliance",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -754,19 +754,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Optional performance monitoring must track timing and resource usage statistics.",
+        "description": "System must maintain safety-certified OS status with vendor-neutral, open-source approach.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20070",
-      "key": "CODE-030",
+      "id": "20030",
+      "key": "REQ-030",
       "fields": {
-        "summary": "Build-time configuration",
+        "summary": "Open source licensing",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -780,19 +780,175 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must support extensive compile-time configuration through TX_* defines.",
+        "description": "RTOS shall be distributed under permissive MIT license allowing commercial use.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20071",
-      "key": "CODE-031",
+      "id": "20031",
+      "key": "REQ-031",
+      "fields": {
+        "summary": "Eclipse governance compliance",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Project must follow Eclipse Foundation development process and IP policy requirements.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20032",
+      "key": "REQ-032",
+      "fields": {
+        "summary": "Production-grade reliability",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System shall demonstrate reliability suitable for deployment in millions of embedded devices.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20033",
+      "key": "REQ-033",
+      "fields": {
+        "summary": "CMake version support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Build system must support CMake version 3.0 or later for cross-platform compilation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20034",
+      "key": "REQ-034",
+      "fields": {
+        "summary": "Cross-compilation toolchain",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System shall support ARM GNU Toolchain for embedded target compilation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20035",
+      "key": "REQ-035",
+      "fields": {
+        "summary": "Ninja build support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Build system must be compatible with Ninja for fast, parallel builds.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20036",
+      "key": "REQ-036",
+      "fields": {
+        "summary": "TraceX analysis integration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall support TraceX tool for graphical system behavior analysis and debugging.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20037",
+      "key": "REQ-037",
       "fields": {
         "summary": "User configuration interface",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -806,19 +962,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "tx_user.h must override default configuration parameters.",
+        "description": "System must provide tx_user.h file interface for build-time feature configuration.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20072",
-      "key": "CODE-032",
+      "id": "20038",
+      "key": "REQ-038",
       "fields": {
-        "summary": "Port-specific extensions",
+        "summary": "Build optimization options",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -832,19 +988,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "TX_PORT_SPECIFIC_DATA must allow architecture-specific additions.",
+        "description": "RTOS shall offer configurable build options optimizing for either execution speed or memory usage.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20073",
-      "key": "CODE-033",
+      "id": "20039",
+      "key": "REQ-039",
       "fields": {
-        "summary": "Dynamic module support",
+        "summary": "Timer tick configurability",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -858,19 +1014,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Module manager must support runtime loading of separately compiled applications.",
+        "description": "System must allow configuration of timer tick rate via TX_TIMER_TICKS_PER_SECOND parameter.",
         "verifiableByCodeOnly": true
       }
     },
     {
-      "id": "20074",
-      "key": "CODE-034",
+      "id": "20040",
+      "key": "REQ-040",
       "fields": {
-        "summary": "Module isolation",
+        "summary": "Priority level configuration",
         "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
         },
         "status": {
           "id": "approved",
@@ -884,163 +1040,7 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Each module must have isolated memory space and controlled kernel access.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20075",
-      "key": "CODE-035",
-      "fields": {
-        "summary": "Module lifecycle management",
-        "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "System must support module loading, starting, stopping, and unloading operations.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20076",
-      "key": "CODE-036",
-      "fields": {
-        "summary": "System timer thread",
-        "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "Kernel must create dedicated timer thread with highest priority for timer processing.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20077",
-      "key": "CODE-037",
-      "fields": {
-        "summary": "Application timer support",
-        "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "System must support user-created timers with one-shot and periodic modes.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20078",
-      "key": "CODE-038",
-      "fields": {
-        "summary": "Timer tick processing",
-        "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "Timer interrupts must be processed either in ISR or dedicated timer thread context.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20079",
-      "key": "CODE-039",
-      "fields": {
-        "summary": "API consistency requirements",
-        "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "All public APIs must follow tx_object_operation naming pattern.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20080",
-      "key": "CODE-040",
-      "fields": {
-        "summary": "Return value standards",
-        "issuetype": {
-          "id": "101",
-          "description": "Implementation-derived requirement",
-          "name": "Code Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "All APIs must return TX_SUCCESS (0) on success or specific error code on failure.",
+        "description": "RTOS shall support configurable thread priority levels up to maximum of 32 priorities.",
         "verifiableByCodeOnly": true
       }
     }
