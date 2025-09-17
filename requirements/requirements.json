@@ -1,0 +1,1048 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 40,
+  "total": 40,
+  "issues": [
+    {
+      "id": "20001",
+      "key": "REQ-001",
+      "fields": {
+        "summary": "Advanced real-time scheduling",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide deterministic, priority-based thread scheduling with configurable preemption policies.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20002",
+      "key": "REQ-002",
+      "fields": {
+        "summary": "Preemption threshold scheduling",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS must support preemption threshold mechanism to prevent lower-priority threads from preempting current thread.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20003",
+      "key": "REQ-003",
+      "fields": {
+        "summary": "Event chaining capability",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System shall support chaining of events for efficient multi-event processing and synchronization.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20004",
+      "key": "REQ-004",
+      "fields": {
+        "summary": "Picokernel architecture",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Core kernel must maintain minimal memory footprint while providing full RTOS functionality.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20005",
+      "key": "REQ-005",
+      "fields": {
+        "summary": "Interrupt management system",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall provide comprehensive interrupt handling and nested interrupt support.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20006",
+      "key": "REQ-006",
+      "fields": {
+        "summary": "Inter-thread message passing",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support multiple IPC mechanisms including queues, semaphores, and mutexes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20007",
+      "key": "REQ-007",
+      "fields": {
+        "summary": "Rich system services",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall provide comprehensive set of kernel services for thread, memory, and timer management.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20008",
+      "key": "REQ-008",
+      "fields": {
+        "summary": "ThreadX SMP support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support symmetric multi-processing for multi-core embedded applications.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20009",
+      "key": "REQ-009",
+      "fields": {
+        "summary": "High-performance SMP kernel",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "SMP implementation shall maintain real-time determinism across multiple processor cores.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20010",
+      "key": "REQ-010",
+      "fields": {
+        "summary": "Dynamic module loading",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX Modules component must support runtime loading of applications built separately from resident code.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20011",
+      "key": "REQ-011",
+      "fields": {
+        "summary": "Module isolation infrastructure",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System shall provide infrastructure for secure module execution and resource management.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20012",
+      "key": "REQ-012",
+      "fields": {
+        "summary": "RTOS adaptation layers",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide compatibility layers for FreeRTOS, POSIX, and OSEK APIs.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20013",
+      "key": "REQ-013",
+      "fields": {
+        "summary": "Migration assistance",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Adaptation layers shall ease application migration from other RTOS platforms to ThreadX.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20014",
+      "key": "REQ-014",
+      "fields": {
+        "summary": "Maximum speed configuration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support optimized configuration with 32 priorities, disabled preemption threshold, and inline operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20015",
+      "key": "REQ-015",
+      "fields": {
+        "summary": "Minimum size configuration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall provide memory-optimized build options for resource-constrained embedded systems.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20016",
+      "key": "REQ-016",
+      "fields": {
+        "summary": "Deterministic real-time behavior",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All kernel operations must have bounded execution times suitable for hard real-time applications.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20017",
+      "key": "REQ-017",
+      "fields": {
+        "summary": "Hardware-based isolation",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must utilize MCU/MPU hardware protection mechanisms for code and data isolation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20018",
+      "key": "REQ-018",
+      "fields": {
+        "summary": "Secure communication support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall provide components enabling OEMs to implement secure communication protocols.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20019",
+      "key": "REQ-019",
+      "fields": {
+        "summary": "Vulnerability management",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Security issues must be reportable through Eclipse Foundation Security Team with defined response process.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20020",
+      "key": "REQ-020",
+      "fields": {
+        "summary": "Supported version maintenance",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Version 6.4.x shall be actively maintained for security updates and critical bug fixes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20021",
+      "key": "REQ-021",
+      "fields": {
+        "summary": "ARM Cortex processor support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support ARM Cortex-M (M0-M85), Cortex-A (A5-A78), and Cortex-R (R4-R7) architectures.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20022",
+      "key": "REQ-022",
+      "fields": {
+        "summary": "RISC-V architecture support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall provide native support for RISC-V 32-bit processor architecture.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20023",
+      "key": "REQ-023",
+      "fields": {
+        "summary": "Multi-architecture compatibility",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support ARC, RX, x86, and Xtensa processor architectures.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20024",
+      "key": "REQ-024",
+      "fields": {
+        "summary": "Development platform support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall support Linux and Win32 platforms for development and testing purposes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20025",
+      "key": "REQ-025",
+      "fields": {
+        "summary": "Semiconductor SDK integration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must integrate with major semiconductor vendor SDKs (STMicroelectronics, NXP, Renesas, Microchip).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20026",
+      "key": "REQ-026",
+      "fields": {
+        "summary": "CMake build system",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall provide composable CMake-based build system supporting multiple toolchains and targets.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20027",
+      "key": "REQ-027",
+      "fields": {
+        "summary": "ARM GNU Toolchain compatibility",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must be fully compatible with ARM GNU Toolchain for cross-compilation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20028",
+      "key": "REQ-028",
+      "fields": {
+        "summary": "Git submodule integration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall support integration as git submodule using CMake add_subdirectory() function.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20029",
+      "key": "REQ-029",
+      "fields": {
+        "summary": "Safety certification compliance",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must maintain safety-certified OS status with vendor-neutral, open-source approach.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20030",
+      "key": "REQ-030",
+      "fields": {
+        "summary": "Open source licensing",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall be distributed under permissive MIT license allowing commercial use.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20031",
+      "key": "REQ-031",
+      "fields": {
+        "summary": "Eclipse governance compliance",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Project must follow Eclipse Foundation development process and IP policy requirements.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20032",
+      "key": "REQ-032",
+      "fields": {
+        "summary": "Production-grade reliability",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System shall demonstrate reliability suitable for deployment in millions of embedded devices.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20033",
+      "key": "REQ-033",
+      "fields": {
+        "summary": "CMake version support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Build system must support CMake version 3.0 or later for cross-platform compilation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20034",
+      "key": "REQ-034",
+      "fields": {
+        "summary": "Cross-compilation toolchain",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System shall support ARM GNU Toolchain for embedded target compilation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20035",
+      "key": "REQ-035",
+      "fields": {
+        "summary": "Ninja build support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Build system must be compatible with Ninja for fast, parallel builds.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20036",
+      "key": "REQ-036",
+      "fields": {
+        "summary": "TraceX analysis integration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall support TraceX tool for graphical system behavior analysis and debugging.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20037",
+      "key": "REQ-037",
+      "fields": {
+        "summary": "User configuration interface",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide tx_user.h file interface for build-time feature configuration.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20038",
+      "key": "REQ-038",
+      "fields": {
+        "summary": "Build optimization options",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall offer configurable build options optimizing for either execution speed or memory usage.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20039",
+      "key": "REQ-039",
+      "fields": {
+        "summary": "Timer tick configurability",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must allow configuration of timer tick rate via TX_TIMER_TICKS_PER_SECOND parameter.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20040",
+      "key": "REQ-040",
+      "fields": {
+        "summary": "Priority level configuration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RTOS shall support configurable thread priority levels up to maximum of 32 priorities.",
+        "verifiableByCodeOnly": true
+      }
+    }
+  ]
+}
