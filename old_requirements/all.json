@@ -1,0 +1,2348 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 90,
+  "total": 90,
+  "issues": [
+    {
+      "id": "30001",
+      "key": "REQ-DOC-001",
+      "fields": {
+        "summary": "Picokernel architecture implementation",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must implement non-layered picokernel architecture where services plug directly into kernel core.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30002",
+      "key": "REQ-DOC-002",
+      "fields": {
+        "summary": "ANSI C source code compliance",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must be written primarily in ANSI C with minimal processor-specific assembly language.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30003",
+      "key": "REQ-DOC-003",
+      "fields": {
+        "summary": "Memory footprint requirements",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must require 2-20KB ROM and 1-2KB RAM with automatic scaling based on used services.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30004",
+      "key": "REQ-DOC-004",
+      "fields": {
+        "summary": "Sub-microsecond context switching",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must achieve sub-microsecond context switching on popular processors with deterministic performance.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30005",
+      "key": "REQ-DOC-005",
+      "fields": {
+        "summary": "Priority-based preemptive scheduling",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support priority-based preemptive scheduling with 32-1024 configurable priority levels.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30006",
+      "key": "REQ-DOC-006",
+      "fields": {
+        "summary": "Preemption-threshold scheduling",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must implement unique preemption-threshold scheduling to reduce context switches.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30007",
+      "key": "REQ-DOC-007",
+      "fields": {
+        "summary": "Thread synchronization primitives",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide threads, mutexes, semaphores, event flags, message queues, and memory pools.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30008",
+      "key": "REQ-DOC-008",
+      "fields": {
+        "summary": "Priority inheritance support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Mutex implementation must support priority inheritance to prevent priority inversion scenarios.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30009",
+      "key": "REQ-DOC-009",
+      "fields": {
+        "summary": "Dynamic memory management",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide both block pools for fixed-size and byte pools for variable-size memory allocation.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30010",
+      "key": "REQ-DOC-010",
+      "fields": {
+        "summary": "Periodic timer interrupt support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX requires periodic timer interrupt source for timeout, time-slicing, and application timer services.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30011",
+      "key": "REQ-DOC-011",
+      "fields": {
+        "summary": "Fast boot performance",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must boot in fewer than 120 cycles with optimized initialization sequence.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30012",
+      "key": "REQ-DOC-012",
+      "fields": {
+        "summary": "Interrupt response optimization",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ISR processing must save only scratch registers unless preemption is required.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30013",
+      "key": "REQ-DOC-013",
+      "fields": {
+        "summary": "API performance benchmarks",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Core API services must execute in 0.2-0.6 microseconds on typical 200MHz processors.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30014",
+      "key": "REQ-DOC-014",
+      "fields": {
+        "summary": "Safety certification compliance",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must be certified for IEC 61508 SIL 4, UL standards, and TÜV safety requirements.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30015",
+      "key": "REQ-DOC-015",
+      "fields": {
+        "summary": "MISRA C compliance",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Code must comply with all required and mandatory rules of MISRA-C:2004 and MISRA-C:2012.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30016",
+      "key": "REQ-DOC-016",
+      "fields": {
+        "summary": "Kernel entry function requirements",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "tx_kernel_enter function must never return and transition directly to thread scheduling loop.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30017",
+      "key": "REQ-DOC-017",
+      "fields": {
+        "summary": "Application definition function",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "tx_application_define function must be provided to create initial system resources.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30018",
+      "key": "REQ-DOC-018",
+      "fields": {
+        "summary": "Configuration option support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support extensive build-time configuration through TX_* defines and tx_user.h file.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30019",
+      "key": "REQ-DOC-019",
+      "fields": {
+        "summary": "Error checking configurability",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TX_DISABLE_ERROR_CHECKING must allow bypassing parameter validation for performance optimization.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30020",
+      "key": "REQ-DOC-020",
+      "fields": {
+        "summary": "Stack checking capability",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TX_ENABLE_STACK_CHECKING must provide runtime stack overflow detection and analysis.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30021",
+      "key": "REQ-DOC-021",
+      "fields": {
+        "summary": "Thread state management",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Threads must support initialization, ready, suspended, terminated, and completed states.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30022",
+      "key": "REQ-DOC-022",
+      "fields": {
+        "summary": "Timeout option support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All blocking operations must support TX_NO_WAIT, TX_WAIT_FOREVER, and specific timeout values.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30023",
+      "key": "REQ-DOC-023",
+      "fields": {
+        "summary": "Event flag operations",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Event flags must support 32-bit groups with AND, OR, AND_CLEAR, and OR_CLEAR operations.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30024",
+      "key": "REQ-DOC-024",
+      "fields": {
+        "summary": "Message queue sizing",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Message queues must support configurable message sizes of 1, 2, 4, 8, or 16 ULONGs.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30025",
+      "key": "REQ-DOC-025",
+      "fields": {
+        "summary": "Timer tick configuration",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TX_TIMER_TICKS_PER_SECOND must define timer resolution with default of 100 for 10ms intervals.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30026",
+      "key": "REQ-DOC-026",
+      "fields": {
+        "summary": "Multicore SMP support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX SMP must perform dynamic load balancing across N processors with core affinity control.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30027",
+      "key": "REQ-DOC-027",
+      "fields": {
+        "summary": "Memory protection via modules",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX Modules must provide memory protection through separate address spaces with MPU/MMU support.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30028",
+      "key": "REQ-DOC-028",
+      "fields": {
+        "summary": "Performance monitoring capabilities",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must track thread resumptions, suspensions, preemptions, and priority inversions for analysis.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30029",
+      "key": "REQ-DOC-029",
+      "fields": {
+        "summary": "Event tracing support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TX_ENABLE_EVENT_TRACE must capture system events for TraceX analysis tool integration.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30030",
+      "key": "REQ-DOC-030",
+      "fields": {
+        "summary": "Event chaining callbacks",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support application-specific notify callback registration for ThreadX objects.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30031",
+      "key": "REQ-DOC-031",
+      "fields": {
+        "summary": "Processor portability design",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must be completely endian-neutral with wide processor family support through tx_port.h.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30032",
+      "key": "REQ-DOC-032",
+      "fields": {
+        "summary": "Development tool integration",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must support major embedded development toolchains with comprehensive kernel awareness.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30033",
+      "key": "REQ-DOC-033",
+      "fields": {
+        "summary": "API naming consistency",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All public APIs must follow tx_object_operation naming convention with consistent return values.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30034",
+      "key": "REQ-DOC-034",
+      "fields": {
+        "summary": "Standard return codes",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All APIs must return TX_SUCCESS on success or specific error codes with comprehensive coverage.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30035",
+      "key": "REQ-DOC-035",
+      "fields": {
+        "summary": "Data type standardization",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must define portable data types (UINT, ULONG, VOID, CHAR) mapping to compiler types.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30036",
+      "key": "REQ-DOC-036",
+      "fields": {
+        "summary": "Memory layout requirements",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support flexible memory placement with instruction, constant, data, and stack areas.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30037",
+      "key": "REQ-DOC-037",
+      "fields": {
+        "summary": "Initialization sequence requirements",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Initialization must follow reset vector, development tool init, main function, then kernel entry sequence.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30038",
+      "key": "REQ-DOC-038",
+      "fields": {
+        "summary": "Low-level port configuration",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "tx_initialize_low_level must configure timer interrupts, exception vectors, and memory initialization.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30039",
+      "key": "REQ-DOC-039",
+      "fields": {
+        "summary": "Demonstration application provision",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Each ThreadX port must include demo_threadx.c demonstration application for validation.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30040",
+      "key": "REQ-DOC-040",
+      "fields": {
+        "summary": "Source code availability",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must provide complete C source code and processor-specific assembly for transparency.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30041",
+      "key": "REQ-DOC-041",
+      "fields": {
+        "summary": "Version identification support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide _tx_version_id string and _tx_build_options variable for version tracking.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30042",
+      "key": "REQ-DOC-042",
+      "fields": {
+        "summary": "Cooperative scheduling support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must support both preemptive and cooperative scheduling modes for thread execution.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30043",
+      "key": "REQ-DOC-043",
+      "fields": {
+        "summary": "Time-slicing capability",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support configurable time-slicing for round-robin scheduling within priority levels.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30044",
+      "key": "REQ-DOC-044",
+      "fields": {
+        "summary": "Dynamic object creation",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must support unlimited runtime creation and deletion of system objects.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30045",
+      "key": "REQ-DOC-045",
+      "fields": {
+        "summary": "Interrupt stack separation",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must maintain separate interrupt stack to prevent corruption of thread stacks.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30046",
+      "key": "REQ-DOC-046",
+      "fields": {
+        "summary": "Stack analysis capability",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must provide runtime stack analysis to track usage and detect overflow conditions.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30047",
+      "key": "REQ-DOC-047",
+      "fields": {
+        "summary": "Timer processing optimization",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide optimized timer interrupt processing with configurable ISR vs thread processing.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30048",
+      "key": "REQ-DOC-048",
+      "fields": {
+        "summary": "Host development environment",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must support Windows and Linux development hosts with ~1MB source code footprint.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30049",
+      "key": "REQ-DOC-049",
+      "fields": {
+        "summary": "Debug interface support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support JTAG, BDM, and ICE debug connections with minimal target intrusion.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30050",
+      "key": "REQ-DOC-050",
+      "fields": {
+        "summary": "Legacy RTOS adaptation",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must provide adaptation layers for FreeRTOS, POSIX, and OSEK API compatibility.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "10001",
+      "key": "REQ-CODE-001",
+      "fields": {
+        "summary": "Picokernel initialization sequence",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Kernel must follow strict initialization order: low-level setup, high-level initialization, application define, then scheduler entry.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10002",
+      "key": "REQ-CODE-002",
+      "fields": {
+        "summary": "Never-returning kernel entry",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The _tx_initialize_kernel_enter function must never return and directly transition to scheduler loop.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10003",
+      "key": "REQ-CODE-003",
+      "fields": {
+        "summary": "Priority-based thread scheduling",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support configurable priority levels with TX_MAX_PRIORITIES as multiple of 32.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10004",
+      "key": "REQ-CODE-004",
+      "fields": {
+        "summary": "Thread state management",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Threads must support READY (0), COMPLETED (1), TERMINATED (2), and additional suspension states.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10005",
+      "key": "REQ-CODE-005",
+      "fields": {
+        "summary": "Preemption threshold support",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Each thread must have configurable preemption threshold separate from priority level.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10006",
+      "key": "REQ-CODE-006",
+      "fields": {
+        "summary": "Time-slice scheduling",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Threads must support configurable time-slice values for round-robin scheduling within same priority.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10007",
+      "key": "REQ-CODE-007",
+      "fields": {
+        "summary": "Automatic thread startup",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Thread creation must support AUTO_START and DONT_START options for immediate execution control.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10008",
+      "key": "REQ-CODE-008",
+      "fields": {
+        "summary": "Byte pool allocation",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide dynamic memory allocation through byte pools with variable-size block allocation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10009",
+      "key": "REQ-CODE-009",
+      "fields": {
+        "summary": "Block pool allocation",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support fixed-size block pools for fast, deterministic memory allocation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10010",
+      "key": "REQ-CODE-010",
+      "fields": {
+        "summary": "Memory alignment enforcement",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All memory allocations must maintain proper alignment based on TX_ALIGN_TYPE requirements.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10011",
+      "key": "REQ-CODE-011",
+      "fields": {
+        "summary": "Mutex priority inheritance",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Mutexes must support optional priority inheritance to prevent priority inversion.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10012",
+      "key": "REQ-CODE-012",
+      "fields": {
+        "summary": "Event flags operations",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Event flags must support AND/OR operations with optional clearing (TX_AND, TX_OR, TX_AND_CLEAR, TX_OR_CLEAR).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10013",
+      "key": "REQ-CODE-013",
+      "fields": {
+        "summary": "Queue message passing",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Queues must support configurable message sizes (1, 2, 4, 8, 16 ULONGs).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10014",
+      "key": "REQ-CODE-014",
+      "fields": {
+        "summary": "Semaphore counting",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Semaphores must support counting with configurable initial and maximum values.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10015",
+      "key": "REQ-CODE-015",
+      "fields": {
+        "summary": "Comprehensive error codes",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must return specific error codes (TX_POOL_ERROR, TX_PTR_ERROR, TX_SIZE_ERROR, etc.).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10016",
+      "key": "REQ-CODE-016",
+      "fields": {
+        "summary": "Parameter validation",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All API functions must have corresponding txe_ error-checking variants.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10017",
+      "key": "REQ-CODE-017",
+      "fields": {
+        "summary": "Safety critical support",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Optional TX_SAFETY_CRITICAL mode must provide exception handling for critical failures.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10018",
+      "key": "REQ-CODE-018",
+      "fields": {
+        "summary": "Stack overflow checking",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Optional TX_ENABLE_STACK_CHECKING must detect stack corruption during execution.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10019",
+      "key": "REQ-CODE-019",
+      "fields": {
+        "summary": "Execution profiling",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Optional TX_EXECUTION_PROFILE_ENABLE must track thread execution statistics.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10020",
+      "key": "REQ-CODE-020",
+      "fields": {
+        "summary": "Random stack filling",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Optional TX_ENABLE_RANDOM_NUMBER_STACK_FILLING must fill stacks with random patterns for debugging.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10021",
+      "key": "REQ-CODE-021",
+      "fields": {
+        "summary": "No-wait operations",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All blocking operations must support TX_NO_WAIT (0) for immediate return.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10022",
+      "key": "REQ-CODE-022",
+      "fields": {
+        "summary": "Forever wait support",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All blocking operations must support TX_WAIT_FOREVER (0xFFFFFFFF) for indefinite blocking.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10023",
+      "key": "REQ-CODE-023",
+      "fields": {
+        "summary": "Timeout value handling",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All blocking operations must support arbitrary timeout values in timer ticks.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10024",
+      "key": "REQ-CODE-024",
+      "fields": {
+        "summary": "Interrupt-safe operations",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All kernel operations must be safe for execution from interrupt service routines.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10025",
+      "key": "REQ-CODE-025",
+      "fields": {
+        "summary": "System state tracking",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Kernel must maintain global system state to prevent invalid operations (initialization vs. running).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10026",
+      "key": "REQ-CODE-026",
+      "fields": {
+        "summary": "Thread context validation",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must detect and prevent invalid operations from wrong execution context.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10027",
+      "key": "REQ-CODE-027",
+      "fields": {
+        "summary": "Event tracing support",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Optional TX_ENABLE_EVENT_TRACE must record all kernel operations for analysis.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10028",
+      "key": "REQ-CODE-028",
+      "fields": {
+        "summary": "User event insertion",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must allow user-defined trace events through tx_trace_user_event_insert.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10029",
+      "key": "REQ-CODE-029",
+      "fields": {
+        "summary": "Performance metrics",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Optional performance monitoring must track timing and resource usage statistics.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10030",
+      "key": "REQ-CODE-030",
+      "fields": {
+        "summary": "Build-time configuration",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support extensive compile-time configuration through TX_* defines.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10031",
+      "key": "REQ-CODE-031",
+      "fields": {
+        "summary": "User configuration interface",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "tx_user.h must override default configuration parameters.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10032",
+      "key": "REQ-CODE-032",
+      "fields": {
+        "summary": "Port-specific extensions",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TX_PORT_SPECIFIC_DATA must allow architecture-specific additions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10033",
+      "key": "REQ-CODE-033",
+      "fields": {
+        "summary": "Dynamic module support",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Module manager must support runtime loading of separately compiled applications.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10034",
+      "key": "REQ-CODE-034",
+      "fields": {
+        "summary": "Module isolation",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Each module must have isolated memory space and controlled kernel access.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10035",
+      "key": "REQ-CODE-035",
+      "fields": {
+        "summary": "Module lifecycle management",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support module loading, starting, stopping, and unloading operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10036",
+      "key": "REQ-CODE-036",
+      "fields": {
+        "summary": "System timer thread",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Kernel must create dedicated timer thread with highest priority for timer processing.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10037",
+      "key": "REQ-CODE-037",
+      "fields": {
+        "summary": "Application timer support",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support user-created timers with one-shot and periodic modes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10038",
+      "key": "REQ-CODE-038",
+      "fields": {
+        "summary": "Timer tick processing",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Timer interrupts must be processed either in ISR or dedicated timer thread context.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10039",
+      "key": "REQ-CODE-039",
+      "fields": {
+        "summary": "API consistency requirements",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All public APIs must follow tx_object_operation naming pattern.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "10040",
+      "key": "REQ-CODE-040",
+      "fields": {
+        "summary": "Return value standards",
+        "issuetype": {
+          "id": "101",
+          "description": "Implementation-derived requirement",
+          "name": "Code Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All APIs must return TX_SUCCESS (0) on success or specific error code on failure.",
+        "verifiableByCodeOnly": true
+      }
+    }
+  ]
+}
