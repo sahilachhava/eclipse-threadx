@@ -1,18 +1,18 @@
 {
   "expand": "schema,names",
   "startAt": 0,
-  "maxResults": 80,
-  "total": 80,
+  "maxResults": 90,
+  "total": 90,
   "issues": [
     {
-      "id": "20001",
+      "id": "30001",
       "key": "REQ-DOC-001",
       "fields": {
-        "summary": "Advanced real-time scheduling",
+        "summary": "Picokernel architecture implementation",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -26,19 +26,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must provide deterministic, priority-based thread scheduling with configurable preemption policies.",
-        "verifiableByCodeOnly": true
+        "description": "System must implement non-layered picokernel architecture where services plug directly into kernel core.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20002",
+      "id": "30002",
       "key": "REQ-DOC-002",
       "fields": {
-        "summary": "Preemption threshold scheduling",
+        "summary": "ANSI C source code compliance",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -52,19 +52,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "RTOS must support preemption threshold mechanism to prevent lower-priority threads from preempting current thread.",
-        "verifiableByCodeOnly": true
+        "description": "ThreadX must be written primarily in ANSI C with minimal processor-specific assembly language.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20003",
+      "id": "30003",
       "key": "REQ-DOC-003",
       "fields": {
-        "summary": "Event chaining capability",
+        "summary": "Memory footprint requirements",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -78,19 +78,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System shall support chaining of events for efficient multi-event processing and synchronization.",
-        "verifiableByCodeOnly": true
+        "description": "System must require 2-20KB ROM and 1-2KB RAM with automatic scaling based on used services.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20004",
+      "id": "30004",
       "key": "REQ-DOC-004",
       "fields": {
-        "summary": "Picokernel architecture",
+        "summary": "Sub-microsecond context switching",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -104,19 +104,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Core kernel must maintain minimal memory footprint while providing full RTOS functionality.",
-        "verifiableByCodeOnly": true
+        "description": "ThreadX must achieve sub-microsecond context switching on popular processors with deterministic performance.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20005",
+      "id": "30005",
       "key": "REQ-DOC-005",
       "fields": {
-        "summary": "Interrupt management system",
+        "summary": "Priority-based preemptive scheduling",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -130,19 +130,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "RTOS shall provide comprehensive interrupt handling and nested interrupt support.",
-        "verifiableByCodeOnly": true
+        "description": "System must support priority-based preemptive scheduling with 32-1024 configurable priority levels.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20006",
+      "id": "30006",
       "key": "REQ-DOC-006",
       "fields": {
-        "summary": "Inter-thread message passing",
+        "summary": "Preemption-threshold scheduling",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -156,19 +156,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must support multiple IPC mechanisms including queues, semaphores, and mutexes.",
-        "verifiableByCodeOnly": true
+        "description": "ThreadX must implement unique preemption-threshold scheduling to reduce context switches.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20007",
+      "id": "30007",
       "key": "REQ-DOC-007",
       "fields": {
-        "summary": "Rich system services",
+        "summary": "Thread synchronization primitives",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -182,19 +182,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "RTOS shall provide comprehensive set of kernel services for thread, memory, and timer management.",
-        "verifiableByCodeOnly": true
+        "description": "System must provide threads, mutexes, semaphores, event flags, message queues, and memory pools.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20008",
+      "id": "30008",
       "key": "REQ-DOC-008",
       "fields": {
-        "summary": "ThreadX SMP support",
+        "summary": "Priority inheritance support",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -208,19 +208,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must support symmetric multi-processing for multi-core embedded applications.",
-        "verifiableByCodeOnly": true
+        "description": "Mutex implementation must support priority inheritance to prevent priority inversion scenarios.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20009",
+      "id": "30009",
       "key": "REQ-DOC-009",
       "fields": {
-        "summary": "High-performance SMP kernel",
+        "summary": "Dynamic memory management",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -234,19 +234,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "SMP implementation shall maintain real-time determinism across multiple processor cores.",
-        "verifiableByCodeOnly": true
+        "description": "System must provide both block pools for fixed-size and byte pools for variable-size memory allocation.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20010",
+      "id": "30010",
       "key": "REQ-DOC-010",
       "fields": {
-        "summary": "Dynamic module loading",
+        "summary": "Periodic timer interrupt support",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -260,19 +260,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "ThreadX Modules component must support runtime loading of applications built separately from resident code.",
-        "verifiableByCodeOnly": true
+        "description": "ThreadX requires periodic timer interrupt source for timeout, time-slicing, and application timer services.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20011",
+      "id": "30011",
       "key": "REQ-DOC-011",
       "fields": {
-        "summary": "Module isolation infrastructure",
+        "summary": "Fast boot performance",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -286,19 +286,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System shall provide infrastructure for secure module execution and resource management.",
-        "verifiableByCodeOnly": true
+        "description": "System must boot in fewer than 120 cycles with optimized initialization sequence.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20012",
+      "id": "30012",
       "key": "REQ-DOC-012",
       "fields": {
-        "summary": "RTOS adaptation layers",
+        "summary": "Interrupt response optimization",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -312,19 +312,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must provide compatibility layers for FreeRTOS, POSIX, and OSEK APIs.",
-        "verifiableByCodeOnly": true
+        "description": "ISR processing must save only scratch registers unless preemption is required.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20013",
+      "id": "30013",
       "key": "REQ-DOC-013",
       "fields": {
-        "summary": "Migration assistance",
+        "summary": "API performance benchmarks",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -338,409 +338,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Adaptation layers shall ease application migration from other RTOS platforms to ThreadX.",
-        "verifiableByCodeOnly": true
+        "description": "Core API services must execute in 0.2-0.6 microseconds on typical 200MHz processors.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20014",
+      "id": "30014",
       "key": "REQ-DOC-014",
-      "fields": {
-        "summary": "Maximum speed configuration",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "System must support optimized configuration with 32 priorities, disabled preemption threshold, and inline operations.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20015",
-      "key": "REQ-DOC-015",
-      "fields": {
-        "summary": "Minimum size configuration",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "RTOS shall provide memory-optimized build options for resource-constrained embedded systems.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20016",
-      "key": "REQ-DOC-016",
-      "fields": {
-        "summary": "Deterministic real-time behavior",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "All kernel operations must have bounded execution times suitable for hard real-time applications.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20017",
-      "key": "REQ-DOC-017",
-      "fields": {
-        "summary": "Hardware-based isolation",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "System must utilize MCU/MPU hardware protection mechanisms for code and data isolation.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20018",
-      "key": "REQ-DOC-018",
-      "fields": {
-        "summary": "Secure communication support",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "RTOS shall provide components enabling OEMs to implement secure communication protocols.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20019",
-      "key": "REQ-DOC-019",
-      "fields": {
-        "summary": "Vulnerability management",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "Security issues must be reportable through Eclipse Foundation Security Team with defined response process.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20020",
-      "key": "REQ-DOC-020",
-      "fields": {
-        "summary": "Supported version maintenance",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "Version 6.4.x shall be actively maintained for security updates and critical bug fixes.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20021",
-      "key": "REQ-DOC-021",
-      "fields": {
-        "summary": "ARM Cortex processor support",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "System must support ARM Cortex-M (M0-M85), Cortex-A (A5-A78), and Cortex-R (R4-R7) architectures.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20022",
-      "key": "REQ-DOC-022",
-      "fields": {
-        "summary": "RISC-V architecture support",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "RTOS shall provide native support for RISC-V 32-bit processor architecture.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20023",
-      "key": "REQ-DOC-023",
-      "fields": {
-        "summary": "Multi-architecture compatibility",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "System must support ARC, RX, x86, and Xtensa processor architectures.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20024",
-      "key": "REQ-DOC-024",
-      "fields": {
-        "summary": "Development platform support",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "RTOS shall support Linux and Win32 platforms for development and testing purposes.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20025",
-      "key": "REQ-DOC-025",
-      "fields": {
-        "summary": "Semiconductor SDK integration",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "System must integrate with major semiconductor vendor SDKs (STMicroelectronics, NXP, Renesas, Microchip).",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20026",
-      "key": "REQ-DOC-026",
-      "fields": {
-        "summary": "CMake build system",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "RTOS shall provide composable CMake-based build system supporting multiple toolchains and targets.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20027",
-      "key": "REQ-DOC-027",
-      "fields": {
-        "summary": "ARM GNU Toolchain compatibility",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "System must be fully compatible with ARM GNU Toolchain for cross-compilation.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20028",
-      "key": "REQ-DOC-028",
-      "fields": {
-        "summary": "Git submodule integration",
-        "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
-        },
-        "status": {
-          "id": "approved",
-          "name": "Approved"
-        },
-        "assignee": {
-          "displayName": "Unassigned",
-          "accountId": "unassigned"
-        },
-        "reporter": {
-          "displayName": "System",
-          "accountId": "system"
-        },
-        "description": "RTOS shall support integration as git submodule using CMake add_subdirectory() function.",
-        "verifiableByCodeOnly": true
-      }
-    },
-    {
-      "id": "20029",
-      "key": "REQ-DOC-029",
       "fields": {
         "summary": "Safety certification compliance",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -754,19 +364,409 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must maintain safety-certified OS status with vendor-neutral, open-source approach.",
-        "verifiableByCodeOnly": true
+        "description": "ThreadX must be certified for IEC 61508 SIL 4, UL standards, and TÜV safety requirements.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20030",
+      "id": "30015",
+      "key": "REQ-DOC-015",
+      "fields": {
+        "summary": "MISRA C compliance",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Code must comply with all required and mandatory rules of MISRA-C:2004 and MISRA-C:2012.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30016",
+      "key": "REQ-DOC-016",
+      "fields": {
+        "summary": "Kernel entry function requirements",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "tx_kernel_enter function must never return and transition directly to thread scheduling loop.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30017",
+      "key": "REQ-DOC-017",
+      "fields": {
+        "summary": "Application definition function",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "tx_application_define function must be provided to create initial system resources.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30018",
+      "key": "REQ-DOC-018",
+      "fields": {
+        "summary": "Configuration option support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support extensive build-time configuration through TX_* defines and tx_user.h file.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30019",
+      "key": "REQ-DOC-019",
+      "fields": {
+        "summary": "Error checking configurability",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TX_DISABLE_ERROR_CHECKING must allow bypassing parameter validation for performance optimization.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30020",
+      "key": "REQ-DOC-020",
+      "fields": {
+        "summary": "Stack checking capability",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TX_ENABLE_STACK_CHECKING must provide runtime stack overflow detection and analysis.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30021",
+      "key": "REQ-DOC-021",
+      "fields": {
+        "summary": "Thread state management",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Threads must support initialization, ready, suspended, terminated, and completed states.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30022",
+      "key": "REQ-DOC-022",
+      "fields": {
+        "summary": "Timeout option support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All blocking operations must support TX_NO_WAIT, TX_WAIT_FOREVER, and specific timeout values.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30023",
+      "key": "REQ-DOC-023",
+      "fields": {
+        "summary": "Event flag operations",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Event flags must support 32-bit groups with AND, OR, AND_CLEAR, and OR_CLEAR operations.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30024",
+      "key": "REQ-DOC-024",
+      "fields": {
+        "summary": "Message queue sizing",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Message queues must support configurable message sizes of 1, 2, 4, 8, or 16 ULONGs.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30025",
+      "key": "REQ-DOC-025",
+      "fields": {
+        "summary": "Timer tick configuration",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TX_TIMER_TICKS_PER_SECOND must define timer resolution with default of 100 for 10ms intervals.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30026",
+      "key": "REQ-DOC-026",
+      "fields": {
+        "summary": "Multicore SMP support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX SMP must perform dynamic load balancing across N processors with core affinity control.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30027",
+      "key": "REQ-DOC-027",
+      "fields": {
+        "summary": "Memory protection via modules",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX Modules must provide memory protection through separate address spaces with MPU/MMU support.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30028",
+      "key": "REQ-DOC-028",
+      "fields": {
+        "summary": "Performance monitoring capabilities",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must track thread resumptions, suspensions, preemptions, and priority inversions for analysis.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30029",
+      "key": "REQ-DOC-029",
+      "fields": {
+        "summary": "Event tracing support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TX_ENABLE_EVENT_TRACE must capture system events for TraceX analysis tool integration.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30030",
       "key": "REQ-DOC-030",
       "fields": {
-        "summary": "Open source licensing",
+        "summary": "Event chaining callbacks",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -780,19 +780,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "RTOS shall be distributed under permissive MIT license allowing commercial use.",
-        "verifiableByCodeOnly": true
+        "description": "System must support application-specific notify callback registration for ThreadX objects.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20031",
+      "id": "30031",
       "key": "REQ-DOC-031",
       "fields": {
-        "summary": "Eclipse governance compliance",
+        "summary": "Processor portability design",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -806,19 +806,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Project must follow Eclipse Foundation development process and IP policy requirements.",
-        "verifiableByCodeOnly": true
+        "description": "ThreadX must be completely endian-neutral with wide processor family support through tx_port.h.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20032",
+      "id": "30032",
       "key": "REQ-DOC-032",
       "fields": {
-        "summary": "Production-grade reliability",
+        "summary": "Development tool integration",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -832,19 +832,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System shall demonstrate reliability suitable for deployment in millions of embedded devices.",
-        "verifiableByCodeOnly": true
+        "description": "ThreadX must support major embedded development toolchains with comprehensive kernel awareness.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20033",
+      "id": "30033",
       "key": "REQ-DOC-033",
       "fields": {
-        "summary": "CMake version support",
+        "summary": "API naming consistency",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -858,19 +858,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Build system must support CMake version 3.0 or later for cross-platform compilation.",
-        "verifiableByCodeOnly": true
+        "description": "All public APIs must follow tx_object_operation naming convention with consistent return values.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20034",
+      "id": "30034",
       "key": "REQ-DOC-034",
       "fields": {
-        "summary": "Cross-compilation toolchain",
+        "summary": "Standard return codes",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -884,19 +884,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System shall support ARM GNU Toolchain for embedded target compilation.",
-        "verifiableByCodeOnly": true
+        "description": "All APIs must return TX_SUCCESS on success or specific error codes with comprehensive coverage.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20035",
+      "id": "30035",
       "key": "REQ-DOC-035",
       "fields": {
-        "summary": "Ninja build support",
+        "summary": "Data type standardization",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -910,19 +910,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "Build system must be compatible with Ninja for fast, parallel builds.",
-        "verifiableByCodeOnly": true
+        "description": "ThreadX must define portable data types (UINT, ULONG, VOID, CHAR) mapping to compiler types.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20036",
+      "id": "30036",
       "key": "REQ-DOC-036",
       "fields": {
-        "summary": "TraceX analysis integration",
+        "summary": "Memory layout requirements",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -936,19 +936,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "RTOS shall support TraceX tool for graphical system behavior analysis and debugging.",
-        "verifiableByCodeOnly": true
+        "description": "System must support flexible memory placement with instruction, constant, data, and stack areas.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20037",
+      "id": "30037",
       "key": "REQ-DOC-037",
       "fields": {
-        "summary": "User configuration interface",
+        "summary": "Initialization sequence requirements",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -962,19 +962,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must provide tx_user.h file interface for build-time feature configuration.",
-        "verifiableByCodeOnly": true
+        "description": "Initialization must follow reset vector, development tool init, main function, then kernel entry sequence.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20038",
+      "id": "30038",
       "key": "REQ-DOC-038",
       "fields": {
-        "summary": "Build optimization options",
+        "summary": "Low-level port configuration",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -988,19 +988,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "RTOS shall offer configurable build options optimizing for either execution speed or memory usage.",
-        "verifiableByCodeOnly": true
+        "description": "tx_initialize_low_level must configure timer interrupts, exception vectors, and memory initialization.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20039",
+      "id": "30039",
       "key": "REQ-DOC-039",
       "fields": {
-        "summary": "Timer tick configurability",
+        "summary": "Demonstration application provision",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -1014,19 +1014,19 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "System must allow configuration of timer tick rate via TX_TIMER_TICKS_PER_SECOND parameter.",
-        "verifiableByCodeOnly": true
+        "description": "Each ThreadX port must include demo_threadx.c demonstration application for validation.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20040",
+      "id": "30040",
       "key": "REQ-DOC-040",
       "fields": {
-        "summary": "Priority level configuration",
+        "summary": "Source code availability",
         "issuetype": {
-          "id": "100",
-          "description": "Software design requirement",
-          "name": "Requirement"
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
         },
         "status": {
           "id": "approved",
@@ -1040,12 +1040,272 @@
           "displayName": "System",
           "accountId": "system"
         },
-        "description": "RTOS shall support configurable thread priority levels up to maximum of 32 priorities.",
-        "verifiableByCodeOnly": true
+        "description": "ThreadX must provide complete C source code and processor-specific assembly for transparency.",
+        "verifiableByCodeOnly": false
       }
     },
     {
-      "id": "20041",
+      "id": "30041",
+      "key": "REQ-DOC-041",
+      "fields": {
+        "summary": "Version identification support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide _tx_version_id string and _tx_build_options variable for version tracking.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30042",
+      "key": "REQ-DOC-042",
+      "fields": {
+        "summary": "Cooperative scheduling support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must support both preemptive and cooperative scheduling modes for thread execution.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30043",
+      "key": "REQ-DOC-043",
+      "fields": {
+        "summary": "Time-slicing capability",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support configurable time-slicing for round-robin scheduling within priority levels.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30044",
+      "key": "REQ-DOC-044",
+      "fields": {
+        "summary": "Dynamic object creation",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must support unlimited runtime creation and deletion of system objects.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30045",
+      "key": "REQ-DOC-045",
+      "fields": {
+        "summary": "Interrupt stack separation",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must maintain separate interrupt stack to prevent corruption of thread stacks.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30046",
+      "key": "REQ-DOC-046",
+      "fields": {
+        "summary": "Stack analysis capability",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must provide runtime stack analysis to track usage and detect overflow conditions.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30047",
+      "key": "REQ-DOC-047",
+      "fields": {
+        "summary": "Timer processing optimization",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must provide optimized timer interrupt processing with configurable ISR vs thread processing.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30048",
+      "key": "REQ-DOC-048",
+      "fields": {
+        "summary": "Host development environment",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must support Windows and Linux development hosts with ~1MB source code footprint.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30049",
+      "key": "REQ-DOC-049",
+      "fields": {
+        "summary": "Debug interface support",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "System must support JTAG, BDM, and ICE debug connections with minimal target intrusion.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "30050",
+      "key": "REQ-DOC-050",
+      "fields": {
+        "summary": "Legacy RTOS adaptation",
+        "issuetype": {
+          "id": "201",
+          "description": "Documentation-derived requirement",
+          "name": "Documentation Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ThreadX must provide adaptation layers for FreeRTOS, POSIX, and OSEK API compatibility.",
+        "verifiableByCodeOnly": false
+      }
+    },
+    {
+      "id": "10001",
       "key": "REQ-CODE-001",
       "fields": {
         "summary": "Picokernel initialization sequence",
@@ -1071,7 +1331,7 @@
       }
     },
     {
-      "id": "20042",
+      "id": "10002",
       "key": "REQ-CODE-002",
       "fields": {
         "summary": "Never-returning kernel entry",
@@ -1097,7 +1357,7 @@
       }
     },
     {
-      "id": "20043",
+      "id": "10003",
       "key": "REQ-CODE-003",
       "fields": {
         "summary": "Priority-based thread scheduling",
@@ -1123,7 +1383,7 @@
       }
     },
     {
-      "id": "20044",
+      "id": "10004",
       "key": "REQ-CODE-004",
       "fields": {
         "summary": "Thread state management",
@@ -1149,7 +1409,7 @@
       }
     },
     {
-      "id": "20045",
+      "id": "10005",
       "key": "REQ-CODE-005",
       "fields": {
         "summary": "Preemption threshold support",
@@ -1175,7 +1435,7 @@
       }
     },
     {
-      "id": "20046",
+      "id": "10006",
       "key": "REQ-CODE-006",
       "fields": {
         "summary": "Time-slice scheduling",
@@ -1201,7 +1461,7 @@
       }
     },
     {
-      "id": "20047",
+      "id": "10007",
       "key": "REQ-CODE-007",
       "fields": {
         "summary": "Automatic thread startup",
@@ -1227,7 +1487,7 @@
       }
     },
     {
-      "id": "20048",
+      "id": "10008",
       "key": "REQ-CODE-008",
       "fields": {
         "summary": "Byte pool allocation",
@@ -1253,7 +1513,7 @@
       }
     },
     {
-      "id": "20049",
+      "id": "10009",
       "key": "REQ-CODE-009",
       "fields": {
         "summary": "Block pool allocation",
@@ -1279,7 +1539,7 @@
       }
     },
     {
-      "id": "20050",
+      "id": "10010",
       "key": "REQ-CODE-010",
       "fields": {
         "summary": "Memory alignment enforcement",
@@ -1305,7 +1565,7 @@
       }
     },
     {
-      "id": "20051",
+      "id": "10011",
       "key": "REQ-CODE-011",
       "fields": {
         "summary": "Mutex priority inheritance",
@@ -1331,7 +1591,7 @@
       }
     },
     {
-      "id": "20052",
+      "id": "10012",
       "key": "REQ-CODE-012",
       "fields": {
         "summary": "Event flags operations",
@@ -1357,7 +1617,7 @@
       }
     },
     {
-      "id": "20053",
+      "id": "10013",
       "key": "REQ-CODE-013",
       "fields": {
         "summary": "Queue message passing",
@@ -1383,7 +1643,7 @@
       }
     },
     {
-      "id": "20054",
+      "id": "10014",
       "key": "REQ-CODE-014",
       "fields": {
         "summary": "Semaphore counting",
@@ -1409,7 +1669,7 @@
       }
     },
     {
-      "id": "20055",
+      "id": "10015",
       "key": "REQ-CODE-015",
       "fields": {
         "summary": "Comprehensive error codes",
@@ -1435,7 +1695,7 @@
       }
     },
     {
-      "id": "20056",
+      "id": "10016",
       "key": "REQ-CODE-016",
       "fields": {
         "summary": "Parameter validation",
@@ -1461,7 +1721,7 @@
       }
     },
     {
-      "id": "20057",
+      "id": "10017",
       "key": "REQ-CODE-017",
       "fields": {
         "summary": "Safety critical support",
@@ -1487,7 +1747,7 @@
       }
     },
     {
-      "id": "20058",
+      "id": "10018",
       "key": "REQ-CODE-018",
       "fields": {
         "summary": "Stack overflow checking",
@@ -1513,7 +1773,7 @@
       }
     },
     {
-      "id": "20059",
+      "id": "10019",
       "key": "REQ-CODE-019",
       "fields": {
         "summary": "Execution profiling",
@@ -1539,7 +1799,7 @@
       }
     },
     {
-      "id": "20060",
+      "id": "10020",
       "key": "REQ-CODE-020",
       "fields": {
         "summary": "Random stack filling",
@@ -1565,7 +1825,7 @@
       }
     },
     {
-      "id": "20061",
+      "id": "10021",
       "key": "REQ-CODE-021",
       "fields": {
         "summary": "No-wait operations",
@@ -1591,7 +1851,7 @@
       }
     },
     {
-      "id": "20062",
+      "id": "10022",
       "key": "REQ-CODE-022",
       "fields": {
         "summary": "Forever wait support",
@@ -1617,7 +1877,7 @@
       }
     },
     {
-      "id": "20063",
+      "id": "10023",
       "key": "REQ-CODE-023",
       "fields": {
         "summary": "Timeout value handling",
@@ -1643,7 +1903,7 @@
       }
     },
     {
-      "id": "20064",
+      "id": "10024",
       "key": "REQ-CODE-024",
       "fields": {
         "summary": "Interrupt-safe operations",
@@ -1669,7 +1929,7 @@
       }
     },
     {
-      "id": "20065",
+      "id": "10025",
       "key": "REQ-CODE-025",
       "fields": {
         "summary": "System state tracking",
@@ -1695,7 +1955,7 @@
       }
     },
     {
-      "id": "20066",
+      "id": "10026",
       "key": "REQ-CODE-026",
       "fields": {
         "summary": "Thread context validation",
@@ -1721,7 +1981,7 @@
       }
     },
     {
-      "id": "20067",
+      "id": "10027",
       "key": "REQ-CODE-027",
       "fields": {
         "summary": "Event tracing support",
@@ -1747,7 +2007,7 @@
       }
     },
     {
-      "id": "20068",
+      "id": "10028",
       "key": "REQ-CODE-028",
       "fields": {
         "summary": "User event insertion",
@@ -1773,7 +2033,7 @@
       }
     },
     {
-      "id": "20069",
+      "id": "10029",
       "key": "REQ-CODE-029",
       "fields": {
         "summary": "Performance metrics",
@@ -1799,7 +2059,7 @@
       }
     },
     {
-      "id": "20070",
+      "id": "10030",
       "key": "REQ-CODE-030",
       "fields": {
         "summary": "Build-time configuration",
@@ -1825,7 +2085,7 @@
       }
     },
     {
-      "id": "20071",
+      "id": "10031",
       "key": "REQ-CODE-031",
       "fields": {
         "summary": "User configuration interface",
@@ -1851,7 +2111,7 @@
       }
     },
     {
-      "id": "20072",
+      "id": "10032",
       "key": "REQ-CODE-032",
       "fields": {
         "summary": "Port-specific extensions",
@@ -1877,7 +2137,7 @@
       }
     },
     {
-      "id": "20073",
+      "id": "10033",
       "key": "REQ-CODE-033",
       "fields": {
         "summary": "Dynamic module support",
@@ -1903,7 +2163,7 @@
       }
     },
     {
-      "id": "20074",
+      "id": "10034",
       "key": "REQ-CODE-034",
       "fields": {
         "summary": "Module isolation",
@@ -1929,7 +2189,7 @@
       }
     },
     {
-      "id": "20075",
+      "id": "10035",
       "key": "REQ-CODE-035",
       "fields": {
         "summary": "Module lifecycle management",
@@ -1955,7 +2215,7 @@
       }
     },
     {
-      "id": "20076",
+      "id": "10036",
       "key": "REQ-CODE-036",
       "fields": {
         "summary": "System timer thread",
@@ -1981,7 +2241,7 @@
       }
     },
     {
-      "id": "20077",
+      "id": "10037",
       "key": "REQ-CODE-037",
       "fields": {
         "summary": "Application timer support",
@@ -2007,7 +2267,7 @@
       }
     },
     {
-      "id": "20078",
+      "id": "10038",
       "key": "REQ-CODE-038",
       "fields": {
         "summary": "Timer tick processing",
@@ -2033,7 +2293,7 @@
       }
     },
     {
-      "id": "20079",
+      "id": "10039",
       "key": "REQ-CODE-039",
       "fields": {
         "summary": "API consistency requirements",
@@ -2059,7 +2319,7 @@
       }
     },
     {
-      "id": "20080",
+      "id": "10040",
       "key": "REQ-CODE-040",
       "fields": {
         "summary": "Return value standards",
